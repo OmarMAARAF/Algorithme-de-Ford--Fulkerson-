@@ -5,7 +5,9 @@ import java.util.LinkedList;
 
         /*
 	Pour un algorithm de recherche, on a utiliser l'algorithm de parcours en largeur (BFS).
-	Cette algorithm débute à partir d'un nœud source. Puis il liste tous les voisins de la source, pour ensuite les explorer un par 	un. Ce mode de fonctionnement utilise donc une file (on a utiliser une liste chainee) dans laquelle il prend le premier sommet et 	place en dernier ses voisins non encore explorés. Les nœuds déjà visités sont marqués afin d'éviter qu'un même nœud soit exploré 		plusieurs fois.
+	Cette algorithm débute à partir d'un nœud source. Puis il liste tous les voisins de la source, pour ensuite les explorer un par un.
+	Ce mode de fonctionnement utilise donc une file (on a utiliser une liste chainee) dans laquelle il prend le premier sommet et place en dernier ses voisins non encore explorés. 
+	Les nœuds déjà visités sont marqués afin d'éviter qu'un même nœud soit exploré 	plusieurs fois.
 	*/ 
 
 	/*
@@ -68,7 +70,7 @@ import java.util.LinkedList;
                     Graph[v][u] += path_flow;
                 }
 
-                // Ajoutons le flot.
+                // Ajout du flot.
                 max_flow += path_flow;
             }
 
